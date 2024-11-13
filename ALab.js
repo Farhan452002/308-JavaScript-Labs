@@ -23,6 +23,7 @@ for(let i=1;i<=100;i++){
 // Create a loop that searches for the next prime number, starting at n and incrementing from there.
 // As soon as you find the prime number, log that number and exit the loop.
 console.log("\nALab Part 2:");
+// Function to get a random number
 function getRandomInt(min, max) {
     const minCeiled = Math.ceil(min);
     const maxFloored = Math.floor(max);
@@ -47,7 +48,9 @@ function isPrime(num) {
     }
     return true;
 }
-n++
+
+n++ //Find the next prime number
+
 // Loop to find the next prime number starting from n
 while (true) {
     if (isPrime(n)) {
@@ -57,3 +60,21 @@ while (true) {
     n++;
 }
 
+console.log("\nAlab Part 3:")
+// Example CSV string
+let csvString = `Name, Age, City
+Alice, 30, New York
+Bob, 25, Los Angeles
+Charlie, 35, Chicago`;
+
+// Split by newlines to get each row, then split each row by commas
+let rows = csvString.split('\n');
+let data = [];
+
+// Loop through each row
+for (let i = 0; i < rows.length; i++) {
+    let cells = rows[i].split(','); // Split each row into individual cells
+    data.push(cells);               // Store each row as an array of words (cells)
+}
+
+console.log(data);
