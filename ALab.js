@@ -47,15 +47,13 @@ function isPrime(num) {
     }
     return true;
 }
-
+n++
 // Loop to find the next prime number starting from n
 while (true) {
-    let first = 1;
-    if (isPrime(n) && !first==1) {
+    if (isPrime(n)) {
         console.log("Starting Number: " ,input ,"\nNext prime number:", n);
         break;
     }
     n++;
-    first=2;
 }
 
