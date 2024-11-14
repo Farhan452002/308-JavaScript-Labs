@@ -18,7 +18,7 @@ console.log("RLab Part 3:");
 let csvRows = []; // Array of objects
 
 for(let i=1;i<rows.length;i++){
-    let csvObj = {id,name,occupation,age};
+    let csvObj = {};
     for(let j=0;j<columns;j++){
         switch(j){
             case 0:
@@ -34,6 +34,8 @@ for(let i=1;i<rows.length;i++){
                 csvObj.age = data[i][j];
                 break;                   
         }
-        csvRows.push(csvObj);
+        
     }
+    csvRows.push(csvObj);
 }
+console.log(csvRows);
