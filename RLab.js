@@ -39,3 +39,12 @@ for(let i=1;i<rows.length;i++){
     csvRows.push(csvObj);
 }
 console.log(csvRows);
+
+// RLab Part 4:
+console.log("RLab Part 4:");
+const csvCopy = [...csvRows];
+csvCopy.pop();
+csvCopy.unshift({id: "48", name: "Barry", occupation: "Runner", age: "25"});
+csvCopy.push({id: "7", name: "Bilbo", occupation: "None", age: "111"});
+console.log(csvCopy);
+
