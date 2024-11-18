@@ -53,3 +53,30 @@ let totalAge = 0;
 ages.forEach(age => totalAge+=age);
 const avgAge = totalAge/ages.length;
 console.log("Average age of all personel: ",avgAge);
+
+// RLab Part 5
+console.log("RLab Part 5:");
+let newCSV = "ID, Name, Occupation, Age\n";
+for(let i=0;i<csvCopy.length;i++){
+    for(let j=0;j<Object.keys(csvCopy[0]).length;j++){
+        switch(j){
+            case 0:
+                newCSV+=csvCopy[i].id;
+                newCSV+=", ";
+                break;
+            case 1:
+                newCSV+=csvCopy[i].name;
+                newCSV+=", ";
+                break;
+            case 2:
+                newCSV+=csvCopy[i].occupation;
+                newCSV+=", ";
+                break;
+            case 3:
+                newCSV+=csvCopy[i].age;
+                newCSV+=", ";
+                break;                   
+        }
+    }
+    newCSV+="\n ";
+}
