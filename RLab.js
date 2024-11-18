@@ -78,5 +78,6 @@ for(let i=0;i<csvCopy.length;i++){
                 break;                   
         }
     }
-    newCSV+="\n ";
+    newCSV+="\n";
 }
+console.log(newCSV);
