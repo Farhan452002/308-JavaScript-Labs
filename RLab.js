@@ -48,3 +48,8 @@ csvCopy.unshift({id: "48", name: "Barry", occupation: "Runner", age: "25"});
 csvCopy.push({id: "7", name: "Bilbo", occupation: "None", age: "111"});
 console.log(csvCopy);
 
+const ages = csvCopy.map(csv => parseInt(csv.age,10));
+let totalAge = 0;
+ages.forEach(age => totalAge+=age);
+const avgAge = totalAge/ages.length;
+console.log("Average age of all personel: ",avgAge);
