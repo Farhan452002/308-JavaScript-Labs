@@ -52,7 +52,7 @@ const ages = csvCopy.map(csv => parseInt(csv.age,10));
 let totalAge = 0;
 ages.forEach(age => totalAge+=age);
 const avgAge = totalAge/ages.length;
-console.log("Average age of all personel: ",avgAge);
+console.log("Average age of all personnel: ",avgAge);
 
 // RLab Part 5
 console.log("RLab Part 5:");
